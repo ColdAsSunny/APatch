@@ -30,6 +30,10 @@ apksign {
 android {
     namespace = "me.bmax.apatch"
 
+    defaultConfig {
+        applicationId = "github.ColdAsSunny.SuperApp"
+        }
+
     buildTypes {
         debug {
             isDebuggable = true
