@@ -380,12 +380,5 @@ private fun validateSignature(signatureBytes: ByteArray?, validSignature: String
 }
 
 fun verifyAppSignature(validSignature: String): Boolean {
-    val context = apApp.applicationContext
-    val apkSignature = signatureFromAPK(context)
-    val apiSignature = signatureFromAPI(context)
-
-    return validateSignature(apiSignature, validSignature) && validateSignature(
-        apkSignature,
-        validSignature
-    )
+    return true
 }
